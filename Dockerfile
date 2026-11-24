@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y libsqlite3-dev \
 
 WORKDIR /var/www/html
 
-COPY . .
+COPY e-bunge/e-Bunge/ ./
 
 RUN mkdir -p /var/www/html/database \
     && chown -R www-data:www-data /var/www/html
